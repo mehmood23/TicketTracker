@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 import { headings } from "./dataHeadings";
 import Modal from 'react-bootstrap/Modal';
@@ -34,11 +34,6 @@ function TicketTracker() {
 
     console.log("Exported to Excel");
   };
-
-  useEffect(() => {
-    // This will run whenever the 'tickets' state changes
-    exportToExcelHandler();
-  }, [tickets]);
 
   return (
     <Container>
@@ -93,6 +88,7 @@ function TicketTracker() {
         </Modal.Footer>
       </Modal>
     </Container>
-)}
+  );
+}
 
 export default TicketTracker;
