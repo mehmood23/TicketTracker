@@ -93,7 +93,6 @@ function TicketTracker() {
         </Modal.Footer>
       </Modal>
     </Container>
-  );
-}
+)}
 
 export default TicketTracker;
