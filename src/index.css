@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a{
+  text-decoration: none;
+  font-family: fantasy;
+  cursor: pointer;
+}
+#card_pos{
+  margin-top: 20px;
+}
+#card_pos:hover{
+  background-color: rgb(217, 244, 235);
+  transition: 2s;
+  border-radius: 10px;
+  transform: scaleX(9deg);
+}
+.anim:hover{
+transform: scaleX(1.1);
+transition: 1.5s;
+}
+input{
+  padding: 20px 100px;
+  margin: 5px 10px;
+
+}
+img{
+  height: auto;
+  width: 15px;
+}
+#delete{
+  float: right;
+}

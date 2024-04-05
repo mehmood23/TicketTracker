@@ -5,11 +5,12 @@ import Modal from 'react-bootstrap/Modal';
 import { AddTicketsData } from "./AddTicketsData";
 import { FormProvider } from "./dataStore";
 import * as XLSX from 'xlsx';
+import { useNavigate } from "react-router-dom";
 
 function TicketTracker() {
   const [tickets, setTickets] = useState([]);
   const [show, setShow] = useState(false);
-
+ const navigate = useNavigate();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -37,6 +38,7 @@ function TicketTracker() {
 
   return (
     <Container>
+      <Button onClick={()=>navigate('/')} variant="warning">Home</Button>
       <h3 className="display-3 text-dark text-center bg-light">
         Daily Ticket Tracker
       </h3>
